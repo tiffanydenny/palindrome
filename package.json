@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tiffanydenny/tdenny-palindrome/issues"
   },
-  "homepage": "https://github.com/tiffanydenny/tdenny-palindrome#readme"
+  "homepage": "https://github.com/tiffanydenny/tdenny-palindrome#readme",
+  "dependencies": {
+    "mocha": "^7.1.1"
+  }
 }

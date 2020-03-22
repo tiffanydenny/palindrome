@@ -6,22 +6,6 @@ String.prototype.reverse = function reverse() {
 }
 
 
-
-//Returns true for a palindrome, false otherwise.
-// function palindrome(string) {
-//   let processContent = string.toLowerCase();
-//   return processContent === reverse(processContent);
-// }
-
-// function emailParts(string) {
-//   let emailNeutral = string.toLowerCase();
-//   let userName = emailNeutral.match(/\S+(?=@)/g);
-//   let domain = emailNeutral.match(/(?<=@)\S+/g);
-//   return Array.from(userName+"@"+domain);
-//
-// }
-
-
 //Defines a Phrase object.
 function Phrase(content) {
   this.content = content;
@@ -37,3 +21,20 @@ function Phrase(content) {
     return this.processedContent() === this.processedContent().reverse();
   }
 }
+
+
+
+
+//Returns true for a palindrome, false otherwise.
+// function palindrome(string) {
+//   let processContent = string.toLowerCase();
+//   return processContent === reverse(processContent);
+// }
+
+// function emailParts(string) {
+//   let emailNeutral = string.toLowerCase();
+//   let userName = emailNeutral.match(/\S+(?=@)/g);
+//   let domain = emailNeutral.match(/(?<=@)\S+/g);
+//   return Array.from(userName+"@"+domain);
+//
+// }
