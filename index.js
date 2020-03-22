@@ -10,10 +10,14 @@ String.prototype.reverse = function reverse() {
 function Phrase(content) {
   this.content = content;
 
-
   // Returns content processed for palindrome testing.
   this.processedContent = function processedContent() {
-    return this.content.toLowerCase();
+    return this.letters().toLowerCase();
+  }
+
+  //Letters Method
+  this.letters = function letters() {
+    return (this.content.match(/[a-z]/gi) || []).join("");
   }
 
   //Returns true for a palindrome, false otherwise.
@@ -21,6 +25,7 @@ function Phrase(content) {
     return this.processedContent() === this.processedContent().reverse();
   }
 }
+
 
 
 
